@@ -16,7 +16,6 @@ let
     libxkbcommon
     wayland
     xorg.libX11
-1
     xorg.libXcursor
     xorg.libXrandr
     xorg.libXi
@@ -27,7 +26,7 @@ in
   environment.systemPackages = with pkgs; [
     git curl wget unzip
     neovim lazygit
-    tmux ripgrep fd jq gh direnv vscode cmake
+    tmux ripgrep fd jq gh direnv  cmake
 
     nodejs nodejs_22 nodePackages.npm yarn bun
 

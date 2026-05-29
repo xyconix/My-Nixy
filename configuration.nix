@@ -2,14 +2,15 @@
 {
 imports = [
   ./hardware-configuration.nix
-  ./modules/system.nix
-  ./modules/dekstop.nix
-  ./modules/dev.nix
-  ./modules/services.nix
-  ./modules/virtualization.nix
-  ./modules/apps.nix
-  ./modules/zsh.nix
-  ./modules/users.nix
+  ./config/modulesSystem/system.nix
+  ./config/modulesSystem/dekstop.nix
+  ./config/modulesApps/dev.nix
+  ./config/modulesSystem/services.nix
+  ./config/modulesApps/apps.nix
+  ./config/modulesApps/zsh.nix
+  ./config/modulesSystem/users.nix
+  ./config/modulesSystem/virtualization.nix
+  ./config/modulesSystem/hyprland.nix
 ];
   system.stateVersion = "25.11";
 }
